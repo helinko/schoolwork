@@ -1,0 +1,225 @@
+M King Robert I, King of Westeros
+1 263 298
+
+N Cersei Lannister
+2 266 0
+A 1 2
+
+M Jaime Lannister
+3 266 0
+
+M Joffrey Baratheon
+4 286 300
+P 4 2 3
+
+N Myrcella Baratheon
+5 290 0
+P 5 2 3
+
+M Tommen Baratheon
+6 290 0
+P 6 2 3
+
+M Stannis Baratheon
+7 265 0
+
+N Selyse Florent
+8 265 0
+
+N Shireen Baratheon
+9 289 0
+P 9 8 7
+
+M Steffon Baratheon
+10 240 278
+
+N Cassana Estermont
+11 240 278
+P 1 11 10
+P 7 11 10
+
+M Renly Baratheon
+12 278 299
+P 12 11 10
+
+N Rhaelle Targaryen
+13 220 250
+
+M Unknown Baratheon
+14 220 250
+P 10 13 14
+
+M Aegon V Targaryen
+15 199 259
+
+N Unknown Targaryen
+16 199 259
+P 13 16 15
+
+M Duncan Targaryen
+17 225 259
+P 17 16 15
+
+M Jaehaerys II Targaryen
+18 230 262
+P 18 16 15
+
+M Aerys II Targaryen
+19 243 283
+
+N Unknown Targaryen
+20 230 262
+P 19 20 18
+
+N Rhaella Targaryen
+21 249 284
+P 21 20 18
+
+M Rhaegar Targaryen
+22 259 283
+P 22 21 19
+
+M Viserys Targaryen
+23 275 298
+P 23 21 19
+
+N Daenerys Targaryen
+24 284 0
+P 24 21 19
+
+M Drogo
+25 260 298
+
+M Rhaego
+26 298 298
+P 26 24 25
+
+N Elia Martell
+27 257 283
+
+N Rhaenys Targaryen
+28 282 283
+P 28 27 22
+
+M Aegon Targaryen
+29 282 283
+P 29 27 22
+
+M Tytos Lannister
+30 230 257
+
+N Unknown Lannister
+31 230 257
+
+M Tywin Lannister
+32 242 300
+P 32 31 30
+
+N Joanna Lannister
+33 245 274
+P 2 33 32
+P 3 33 32
+
+M Tyrion Lannister
+34 274 0
+P 34 33 32
+
+N Sansa Stark
+35 286 0
+A 35 34
+
+M Kevan Lannister
+36 245 300
+P 36 31 30
+
+N Dorna Swyft
+37 255 0
+A 36 37
+
+M Lancel Lannister
+38 287 0
+P 38 37 36
+
+M Willem Lannister
+39 288 299
+P 39 37 36
+
+M Martyn Lannister
+40 289 0
+P 40 37 36
+
+N Janei Lannister
+41 297 0
+P 41 37 36
+
+M Tygett Lannister
+42 250 285
+P 42 31 30
+
+N Darlessa Marbrand
+43 250 0
+A 43 42
+
+M Tyrek Lannister
+44 285 299
+P 44 43 42
+
+N Ermesande Hayford
+45 290 0
+A 45 44
+
+M Gerion Lannister
+46 250 292
+P 46 31 30
+
+N Unknown Lannister
+47 260 0
+A 47 46
+
+N Joy Hill
+48 288 0
+P 48 47 46
+
+N Genna Lannister
+49 245 0
+P 49 31 30
+
+M Emmon Frey
+50 239 0
+A 50 49
+
+M Cleos Frey
+51 270 299
+P 51 49 50
+
+N Jeyne Darry
+52 270 0
+A 52 51
+
+M Tywin Frey
+53 288 0
+P 53 52 51
+
+M Willem Frey
+54 290 0
+P 54 52 51
+
+M Lyonel Frey
+55 273 0
+P 55 49 50
+
+M Tion Frey
+56 285 299
+P 56 49 50
+
+M Red Walder Frey
+57 286 0
+P 57 49 50
+
+T 15
+
+T 30
+K 4 15 K 57 1 K 57 30 K 20 50 K 20 29 K 15 10 K 40 50 K 31 55 K 31 20 K 5 40 K 45 30 K 2 3 K 4 3 K 5 2 K 10 1 K 1 2 K 30 31 K 30 32 K 30 33 K 30 34 K 34 35
+K 10 11 K 10 12 K 10 13 K 10 14 K 10 15 K 10 16 K 10 17 K 20 21 K 20 22 K 20 23 K 20 24 K 20 25 K 20 26 K 20 27 K 20 28 K 20 29 K 20 30
+K 10 30 K 10 31 K 10 32 K 10 34 K 10 35 K 10 36 K 10 37
+Q

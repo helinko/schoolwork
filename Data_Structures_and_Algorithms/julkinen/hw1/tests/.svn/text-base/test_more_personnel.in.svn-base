@@ -1,0 +1,20 @@
+R first_1000_personnel.tst
+F 500
+F 250
+F 666
+F 999
+F 234
+X young
+R second_1000_personnel.tst
+F 1500
+F 1000
+X old
+F 100
+F 666
+F 1113
+F 630
+F 1327
+F 1701
+Q
+
+

@@ -1,0 +1,77 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="template.css">
+</head>
+<body>
+<div>
+<h2>Test results</h2>
+<table border=1>
+	<tr>
+		<td>Testname</td>
+		<td>Result</td>
+	</tr>
+	<tr>
+		<td>${Test0Name}</td>
+		<td>${Test0Result}</td>
+	</tr>
+	<tr>
+		<td>${Test1Name}</td>
+		<td>${Test1Result}</td>
+	</tr>
+	<tr>
+		<td>${Test2Name}</td>
+		<td>${Test2Result}</td>
+	</tr>
+	<tr>
+		<td>${Test3Name}</td>
+		<td>${Test3Result}</td>
+	</tr>
+	<tr>
+		<td>${Test4Name}</td>
+		<td>${Test4Result}</td>
+	</tr>
+	<tr>
+		<td>${Test5Name}</td>
+		<td>${Test5Result}</td>
+	</tr>
+	<tr>
+		<td>${Test6Name}</td>
+		<td>${Test6Result}</td>
+	</tr>
+	<tr>
+		<td>${Test7Name}</td>
+		<td>${Test7Result}</td>
+	</tr>
+	<tr>
+		<td>${Test8Name}</td>
+		<td>${Test8Result}</td>
+	</tr>
+	<tr>
+                <td>${Test9Name}</td>
+                <td>${Test9Result}</td>
+        </tr>
+	<tr>
+                <td>${Test10Name}</td>
+                <td>${Test10Result}</td>
+        </tr>
+	<tr>
+                <td>${Test11Name}</td>
+                <td>${Test11Result}</td>
+        </tr>
+	<tr>
+                <td>${Test12Name}</td>
+                <td>${Test12Result}</td>
+        </tr>
+
+</table>
+<br/>
+<table border=1>	
+	<tr>
+                <td>${TestAverage}</td>
+                <td>${TestAverageResult}</td>
+        </tr>
+</table>
+<br/>
+</div>
+
+</body>

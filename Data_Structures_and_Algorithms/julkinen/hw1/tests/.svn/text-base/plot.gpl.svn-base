@@ -1,0 +1,54 @@
+set term png
+set output "find.png"
+set autoscale
+set xlabel "Alkioiden lkm"
+set ylabel "aika / s"
+f(x)=A*x+B
+fit f(x) "find.dat" via A,B
+plot "find.dat" with lp title "Finding", f(x)
+
+set output "del.png"
+plot "del.dat" with lp title "Deleting"
+
+reset
+plot "add.dat"
+MAX=GPVAL_Y_MAX
+MIN=GPVAL_Y_MIN
+print MIN
+print MAX
+MINY = MIN-2*(MAX-MIN)
+MAXY = MAX+2*(MAX-MIN)
+print MINY
+print MAXY
+set yrange [MINY:MAXY]
+set xlabel "Alkioiden lkm"
+set ylabel "aika / s"
+set output "add.png"
+f(x)=A
+fit f(x) "add.dat" via A
+plot "add.dat" with lp title "Adding", f(x)
+
+reset
+plot "old.dat"
+MAX=GPVAL_Y_MAX
+MIN=GPVAL_Y_MIN
+set yrange [MIN-2*(MAX-MIN):MAX+2*(MAX-MIN)]
+set xlabel "Alkioiden lkm"
+set ylabel "aika / s"
+set output "old.png"
+f(x)=A
+fit f(x) "old.dat" via A
+plot "old.dat" with lp title "Oldest", f(x)
+
+reset
+plot "young.dat"
+MAX=GPVAL_Y_MAX
+MIN=GPVAL_Y_MIN
+set yrange [MIN-2*(MAX-MIN):MAX+2*(MAX-MIN)]
+set xlabel "Alkioiden lkm"
+set ylabel "aika / s"
+set output "young.png"
+f(x)=A
+fit f(x) "young.dat" via A
+plot "young.dat" with lp title "Youngest", f(x)
+

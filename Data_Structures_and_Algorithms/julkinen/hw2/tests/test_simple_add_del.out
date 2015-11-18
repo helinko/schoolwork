@@ -1,0 +1,48 @@
+> A a
+Word a added.
+> A aa
+Word aa added.
+> A aaa
+Word aaa added.
+> A aaaaaaaa
+Word aaaaaaaa added.
+> A aaaa
+Word aaaa added.
+> A ab
+Word ab added.
+> A aab
+Word aab added.
+> A aabb
+Word aabb added.
+> A abababa
+Word abababa added.
+> D aaaa
+Word aaaa removed.
+> D aab
+Word aab removed.
+> A aab
+Word aab added.
+> A aabb
+Word aabb not added.
+> D aaa
+Word aaa removed.
+> D aa
+Word aa removed.
+> D a
+Word a removed.
+> A aaa
+Word aaa added.
+> A aaaa
+Word aaaa added.
+> A ababa
+Word ababa added.
+> D aa
+Word aa not found.
+> A a
+Word a added.
+> A aa
+Word aa added.
+> A aab
+Word aab not added.
+> E
+> Q

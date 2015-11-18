@@ -1,0 +1,20 @@
+body{
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#performance div{
+	display: inline-block;
+}
+#performance  img{
+	width: 400px;
+}
+
+

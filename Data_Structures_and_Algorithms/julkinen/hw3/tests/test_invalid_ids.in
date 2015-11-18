@@ -1,0 +1,26 @@
+N Sari
+1 1960 0
+M Virheellinen ID
+1 1960 0
+
+M Jari
+2 1960 0
+M Jari
+2 1960 0
+
+M Mari
+3 1985 0
+
+N Mari
+3 1985 0
+
+P 3 1 2
+
+N Sari
+4 1965 0
+
+M Kari
+5 1980 0
+
+P 4 1 2
+Q

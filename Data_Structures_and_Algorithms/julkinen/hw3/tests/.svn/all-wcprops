@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests
+END
+test_cleopatra.out
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_cleopatra.out
+END
+test_public.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_public.in
+END
+test_public.out
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_public.out
+END
+test_victoria.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_victoria.in
+END
+test_eff1.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_eff1.in
+END
+test_victoria.out
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_victoria.out
+END
+test_invalid_id_relations.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_invalid_id_relations.in
+END
+test_eff2.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_eff2.in
+END
+test_more_relations.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_more_relations.in
+END
+test_invalid_id_relations.out
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_invalid_id_relations.out
+END
+test_more_relations.out
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_more_relations.out
+END
+test_invalid_ids.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_invalid_ids.in
+END
+test_invalid_ids.out
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_invalid_ids.out
+END
+test_got.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_got.in
+END
+test_got.out
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_got.out
+END
+template.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/template.css
+END
+test_tree.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_tree.in
+END
+test_relations.in
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_relations.in
+END
+test_tree.out
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_tree.out
+END
+test_relations.out
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_relations.out
+END
+test_bold_and_beautiful.in
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_bold_and_beautiful.in
+END
+test_bold_and_beautiful.out
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_bold_and_beautiful.out
+END
+test_negative_years.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_negative_years.in
+END
+test_negative_years.out
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_negative_years.out
+END
+test_marriage_relations.in
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_marriage_relations.in
+END
+test_marriage_relations.out
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_marriage_relations.out
+END
+run_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/run_tests.py
+END
+test_cleopatra.in
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/test_cleopatra.in
+END
+template.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/kurssi/kurssikamat/!svn/ver/21/branches/julkinen/hw3/tests/template.html
+END

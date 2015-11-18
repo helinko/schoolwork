@@ -1,0 +1,20 @@
+> R test_same_birth_years.tst
+> F 2
+Jadzia Dax Lieutenant 2330 2335 Red
+> F 3
+Julian Bashir MedicalOfficer 2330 2337 Blue
+> F 4
+Kira Nerys Commander 2330 2339 Red
+> X old
+Worf Lieutenant 2330 2331 Gold
+> X young
+Jake Sisko Reporter 2330 2360 Red
+> F 7
+Quark Barkeep 2330 2346 Blue
+> F 1
+Worf Lieutenant 2330 2331 Gold
+> F 6
+Odo  Constable 2330 2342 Red
+> F 9
+Miles O'Brien PettyOfficer 2330 2350 Blue
+> Q

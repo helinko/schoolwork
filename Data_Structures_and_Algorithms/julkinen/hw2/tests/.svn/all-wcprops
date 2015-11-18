@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests
+END
+test_public.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_public.in
+END
+test_public.out
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_public.out
+END
+test_graphs.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_graphs.in
+END
+89k_words
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/89k_words
+END
+150kw2
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/150kw2
+END
+100K_words
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/100K_words
+END
+test_simple_add_del.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_simple_add_del.in
+END
+test_simple_add_del.out
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_simple_add_del.out
+END
+test_print.in
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_print.in
+END
+test_duplicates.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_duplicates.in
+END
+test_print.out
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_print.out
+END
+test_duplicates.out
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_duplicates.out
+END
+template.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/template.css
+END
+test_eff.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_eff.in
+END
+test_100.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_100.in
+END
+words_pub
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/words_pub
+END
+test_100.out
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_100.out
+END
+test_delete.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_delete.in
+END
+test_delete.out
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/test_delete.out
+END
+12k_words
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/12k_words
+END
+run_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/run_tests.py
+END
+template.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/kurssi/kurssikamat/!svn/ver/16/branches/julkinen/hw2/tests/template.html
+END

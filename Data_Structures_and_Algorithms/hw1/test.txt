@@ -1,0 +1,8 @@
+Captain 2233 2250 Gold James T. Kirk
+Commander 2230 2250 Blue Spock
+Commander 2222 2241 Red Montgomery Scott
+MedicalOfficer 2227 2251 Blue Leonard McCoy
+Lieutenant 2237 2255 Gold Hikaru Sulu
+Lieutenant 2239 2257 Red Nyota Uhura
+Lieutenant 2232 2250 Gold Lee Kelso
+Ensign 2245 2263 Gold Pavel Chekov

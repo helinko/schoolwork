@@ -1,0 +1,339 @@
+<!--
+*
+* TIE-02400 harjoitustyö
+* Käytössä lemonade grid:
+* Copyright 2013, Joe Richardson
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+-->
+<!DOCTYPE html>
+<html lang="fi-FI">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+	<!-- This is the main grid stylesheet -->
+	<link rel="stylesheet" type="text/css" href="TIE-02400_files/lemonade.css"/>
+
+	<!-- This is styles for the box classes (optional) -->
+	<link rel="stylesheet" type="text/css" href="TIE-02400_files/styles.css"/>
+
+	<title>TIE-02400 harjoitustyö</title>
+</head>
+
+<body>
+
+<div class="frame">
+	<div class="bit-1">
+		<div class="box">
+			TIE-02400 harjoitustyö <br/>
+			<small> Kevät 2015 </small>
+		</div>
+	</div>
+</div>
+
+<div class="frame">
+	<div class="bit-3">
+		<table id="history">
+			<tbody>
+				<tr>
+					<td class="history-head" colspan="3"> Dokumentin historia </td>
+				</tr>
+				<tr>
+					<td> 27.2.2015 </td>
+					<td> antti </td>
+					<td> työohje julkaistu </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="bit-3"></div>
+	<div class="bit-3"></div>
+</div>
+
+<div class="frame">
+
+
+<h2> Yleistä </h2>
+
+<p> Tällä sivulla kuvataan kurssin TIE-02400 Ohjelmoinnin tekniikat kevään 2015 toteutuskerran harjoitustyö. Harjoitustyössä toteutetaan yksinkertainen etätiedostonhallintaohjelma.
+</p>
+
+<h3> Toteutettava ohjelma </h3>
+
+<p> Tarkoituksena on toteuttaa pieni etätiedostonhallintaohjelma, jolla voi tarkastella muiden tietokoneiden <a href="http://fi.wikipedia.org/wiki/Tiedostoj%C3%A4rjestelm%C3%A4">tiedostojärjestelmiä</a> ja kopioida niiden sisältöä järjestelmältä toiselle. Ohjelmaa käynnistettäessä muodostetaan yhteys halutulle palvelimelle. Tämän jälkeen päästään ohjelman pääikkunaan, jonka kaksi näkymää näyttävät paikallisen koneen ja palvelimen tiedostojärjestelmät. Kummastakin näkyy kerralla yhden hakemiston sisältö, ja hakemistohierarkiassa voi liikkua ylös- ja alaspäin tarpeen mukaan. Erikoistapauksena yhteys etäjärjestelmään voidaan jättää muodostamatta, ja esittää paikallinen tiedostojärjestelmä kummassakin näkymässä.
+</p>
+
+<p> Haluttujen hakemistojen ollessa auki näkymissä voidaan kummasta tahansa valita <i>hakemistoalkioita</i> (directory entry) ja kopioida ne toiseen. Käsiteltävistä alkioista tutuimpia ovat tavalliset tiedostot ja hakemistot, joita kutsuttakoon <i>perusalkioiksi</i>. Muita <i>erikoisalkioita</i> ovat esimerkiksi muihin alkioihin osoittavat symboliset linkit.
+</p>
+
+<p> Ohjelmaan on jo toteutettu valmiiksi etäyhteyden muodostaminen ja etäalkioiden käsittely. Itse toteutettaviksi jäävät muut osat kuten käyttöliittymä, paikallisten alkioiden käsittely ja varsinaiset operaatiot. Alla on hahmotelma siitä, miltä valmiin ohjelman käyttöliittymä voisi näyttää.
+</p>
+
+<img src="TIE-02400_files/gui_luonnos.png" width="800">
+
+
+<h3> Käyttötapaus </h3>
+
+Seuraava toimintojen sarja havainnollistaa ohjelman käyttöä ja toimintaa. Kyseessä on esimerkki, eikä valmiin toteutuksen tarvitse seurata sitä orjallisesti.
+
+<ul>
+	<li> Käyttäjä käynnistää ohjelman ja saa eteensä valmiiksi toteutetun kirjautumisdialogin.
+	</li>
+	<li> Käyttäjä syöttää dialogiin haluamansa etäpalvelimen tiedot ja käskee muodostaa yhteyden. Uusi dialogi kysyy häneltä salasanaa ja hän syöttää sen. Valmis toteutus muodostaa etäyhteyden ja luovuttaa sitten kontrollin ja rakentamansa yhteysolion itse toteutettavalle ohjelman osalle.
+	</li>
+	<li> Itse toteutettava ohjelman pääikkuna aukeaa näkyviin. Ikkunassa on kaksi näkymää, joista toinen näyttää paikallisen hakemiston sisällön ja toinen etäpalvelimella olevan hakemiston sisällön. Oma toteutus pääsee käsiksi etäpalvelimen hakemistoalkioihin yhteysoliolta saatavien etäalkio-olioiden kautta. Lisäksi ikkunassa on joukko painikkeita ja/tai valikoita eri toiminnoille.
+	</li>
+	<li> Käyttäjä liikkuu molemmissa hakemistonäkymissä haluamiinsa hakemistoihin.
+	</li>
+	<li> Käyttäjä valitsee etäpalvelimen hakemistosta tiedoston ja käynnistää sen kopioinnin paikallisen koneen hakemistoon. Käyttöliittymästä näkee, että kopiointi on meneillään, kunnes tiedosto on kokonaan kopioitu.
+	</li>
+	<li> Käyttäjä palaa paikallisessa hakemistohierarkiassa vähän matkaa ylöspäin.
+	</li>
+	<li> Käyttäjä valitsee useita tiedostoja kerralla ja käynnistää niiden kopioinnin etäpalvelimelle. Kesken kopioinnin yhteysolion kautta saatu etäalkio-olio tuottaa poikkeuksen nimikonfliktista. Tämän seurauksena oma toteutus kertoo käyttäjälle, mitä tapahtui ja että kopiointi on keskeytetty. Loppuja tiedostoja ei kopioida, mutta jo kopioidut tiedostot jätetään paikoilleen.
+	</li>
+	<li> Käyttäjä katsoo etähakemistonäkymästä, mitkä kopioitavista tiedostoista jäivät puuttumaan. Hän valitsee ne paikallisesta näkymästä ja kopioi ne.
+	</li>
+	<li> Käyttäjä sulkee ohjelman.
+	</li>
+</ul>
+
+
+<h3> Oppimistavoitteet </h3>
+
+<p> Työssä on tarkoitus harjoitella seuraavia asioita:
+</p>
+
+<ul>
+	<li> Olemassa olevan ohjelmakoodin toimintaan tutustuminen ja sen käyttö tarjottujen rajapintojen avulla (sopimussuunnittelun hyödyntäminen)
+	</li>
+	<li> Toiminnallisuuden lisääminen sovellukseen siihen määriteltyjen rajapintojen mukaan (sopimussuunnittelun noudattaminen)
+	</li>
+	<li> Graafisen käyttöliittymän toteuttaminen osaksi ohjelmaa
+	</li>
+	<li> Poikkeusten käsittely ja virhetilanteiden hallinta
+	</li>
+	<li> Oman koodin testaus yksikkötasolla
+	</li>
+</ul>
+
+
+<h2> Vaatimukset </h2>
+
+<p> Harjoitustyöhön on toteutettava vähintään tietyt perusominaisuudet, jotta sen suoritus voidaan hyväksyä. Lisäksi tarjolla on joukko vapaaehtoisia lisäominaisuuksia, joita toteuttamalla voi korottaa työn arvosanaa.
+</p>
+
+<h3> Pakolliset ominaisuudet </h3>
+
+<p> Harjoitustyössä on toteutettava ainakin alla olevat ominaisuudet. Niiden mukaisella minimitoteutuksella työstä voi ansaita <strong>korkeintaan arvosanan 4</strong> (huom, oli aiemmin 3, mutta työmäärää helpotettu). Korkeampi arvosana edellyttää myös joidenkin lisäosien toteutusta.
+</p>
+
+<p>Ohjelman tarvitsee osata käsitellä ainoastaan tiedostojärjestelmän perusalkioita, eli tiedostoja ja hakemistoja. Samoin ohjelman on tarpeen toimia vain Linux-järjestelmien kanssa (eli POSIX-tiedostojärjestelmästä poikkeavaan käyttäytymiseen ei tarvitse varautua).
+</p>
+
+<ul>
+	<li> Ohjelmaan on toteutettu pääkäyttöliittymä, jossa on näkymät hakemistoihin kahdessa tiedostojärjestelmässä.
+	</li>
+	<li> Hakemistoalkioita voi selata hakemistonäkymissä ja hakemistojen välillä liikkua.
+	</li>
+	<li> Tiedostoja voi kopioida hakemistonäkymien välillä. Niitä voi valita kopioitavaksi kerralla yhden tai useamman. Hakemistoja ei tarvitse voida kopioida. Kopioinnin aikana on oltava nähtävissä, että operaatio on meneillään, mutta käyttöliittymän ei tarvitse reagoida syötteisiin.
+	</li>
+	<li> Erikoisalkioiden läsnäolo tarkasteltavissa hakemistoissa ei saa sekoittaa ohjelmaa, mutta niitä ei tarvitse käsitellä mitenkään. Ne voidaan ohittaa operaatioissa eikä niitä tarvitse näyttää hakemistonäkymissä.
+	</li>
+	<li> Seuraavista virhetilanteista toivutaan hallitusti: etäyhteyden katkeaminen, luku- tai kirjoitusoikeuksien puuttuminen, nimikonfliktit (esim. kopioidaan tiedostoa hakemistoon, joka jo sisältää samannimisen tiedoston). Virhetilanteessa meneillään oleva operaatio voidaan peruuttaa tai keskeyttää, mutta ohjelman on päädyttävä järkevään tilaan ja käyttäjälle annettava ilmoitus virheestä.
+	</li>
+	<li> Luokalle <code>Copyer</code> on kirjoitettu yksikkötestit sen pakollisille ominaisuuksille. <code>Copyer</code>iin liittyvien lisäominaisuuksien testausta ei vaadita. Testauksen helpottamiseksi käytettävissä on valmiiksi toteutetut luokat virtuaalisille hakemistoalkioille, joiden avulla testejä voi suorittaa käsittelemättä oikeaa tiedostojärjestelmää.
+	</li>
+</ul>
+
+<h3> Lisäominaisuudet </h3>
+
+<p> Alla olevia lisäominaisuuksia ei tarvitse toteuttaa, mutta hyvästä lisäosan toteutuksesta voi ansaita korotuksen arvosanaan. Korotus on 0,5 arvosanaa kustakin lisäosasta. Korotuksen saaminen edellyttää, että lisäosa on <strong>dokumentoitu</strong> palautuksessa. Töiden tarkastajat eivät etsi lisäosia palautetusta koodista.
+</p>
+
+<p> Useita lisäominaisuuksia toteutettaessa niiden on pääsääntöisesti toimittava myös yhdessä. Esimerkiksi jos toteutetaan tuki alkioiden tietojen tarkastelulle ja symbolisten linkkien käsittelylle, on myös symbolisten linkkien tietoja voitava tarkastella.
+</p>
+
+<ul>
+	<li> Hakemistojen rekursiivinen käsittely. Hakemistoja sisältöineen voidaan kopioida ja käsitellä muilla tuetuilla operaatioilla. <a href="#tiraka">(1)</a>
+	</li>
+	<li> Leikepöytä. Tuettujen alkioiden kopiointi-, leikkaus- ja liittämisoperaatiot, joiden avulla tiedostoja voi siirtää yhden järjestelmänäkymän sisällä kierrättämättä niitä toisen näkymän kautta.
+	</li>
+	<li> Tuettujen alkioiden poisto- ja uudelleennimeämisoperaatiot. Hakemistoja tarvitsee voida poistaa vain, jos niiden rekursiivista käsittelyä tuetaan. Uudelleennimeäminen on toteutettava järkevästi niin, ettei alkiota kopioida.
+	</li>
+	<li> Tuettujen alkioiden tietojen (esim. koko, päiväykset, oikeudet) näyttäminen joko hakemistonäkymissä tai erillisessä dialogissa. Hakemistojen koko sisältöineen tarvitsee näyttää vain, jos niiden rekursiivista käsittelyä tuetaan.
+	</li>
+	<li> Tuettujen alkioiden oikeuksien hallinta. Alkioille voidaan asettaa luku-, kirjoitus- ja suoritusoikeudet käyttäjälle, ryhmälle ja muille.
+	</li>
+	<li> <a href="http://en.wikipedia.org/wiki/Symbolic_link">Symbolisten linkkien</a> ja niitä sisältävien hakemistorakenteiden käsittely tuetuilla operaatioilla <a href="TIE-02400_files/linkit.png">helpoissa tapauksissa</a>. Hakemistonäkymissä on voitava kulkea linkkien osoittamien hakemistojen sisään. Operaatioissa linkkejä voidaan käsitellä joko itsenäisinä alkioina tai ikään kuin ne olisivat linkittämiään alkioita. Tämän lisäosan toteutuksen tarvitsee osata käsitellä ainoastaan symbolisia linkkejä, jotka osoittavat kokonaan erillisiin hakemistorakenteisiin (eli muodostavat puumaisen rakenteen). Hankalampia linkkien muodostamia silmukoita tai verkkoja ei tarvitse osata käsitellä, eikä ohjelman tarvitse toimia järkevästi tilanteissa, joissa niitä tulee vastaan. <a href="#tiraka">(1)</a>
+	</li>
+	<li> Tuettuja alkioita voi kopioida raahaamalla niitä hiirellä hakemistonäkymästä toiseen.
+	</li>
+	<li> Järkevä(hkö)n edistymispalkin näyttäminen tuetuille operaatioille, joko päänäkymässä tai erillisessä dialogissa. Tämä edellyttää operaation koon arviointia jo sen suorituksen alkuvaiheessa. Ajankäytön arvioita ei tarvitse esittää. <a href="#rinn">(2)</a>
+	</li>
+	<li> Tuettujen alkioiden kopioinnin (ja siirtämisen, jos tuettu) toteuttaminen asynkronisesti siten, että järjestelmä ei pysähdy odottamaan operaation tulosta vaan muita operaatioita voi suorittaa samanaikaisesti. <a href="#rinn">(2)</a>
+	</li>
+	<li> Näkymät, jotka esittävät tiedostojärjestelmien hakemistohierarkiat puurakenteina ja joista voidaan vaihtaa auki olevia hakemistoja. Voidaan toteuttaa erillisinä näkyminä hakemistonäkymien rinnalle tai vaihtoehtoisena moodina samoihin näkymiin.
+	</li>
+	<li> Yhteyden muodostaminen useampaan kuin yhteen etäjärjestelmään kerralla. Käyttöliittymään voi esimerkiksi toteuttaa kummankin hakemistonäkymän yläpuolelle alasvetovalikon, josta voi vaihtaa kulloinkin näytettävää järjestelmää.
+	</li>
+	<li> Virhetilanteiden monipuolisempi hallinta. Esimerkiksi etäyhteyden katketessa se yritetään muodostaa uudelleen ja nimikonfliktissa tarjotaan dialogissa vaihtoehdot ylikirjoittaa vanha tiedosto, nimetä kopioitava tiedosto uudelleen tai peruuttaa operaatio.
+	</li>
+	<li> Ohjelman pakollisille osille on muodostettu kattavat rajapintamäärittelyt (parametrit ja paluuarvot, esi- ja jälkiehdot, poikkeukset). Lisäominaisuuksiin liittyville rajapinnoille määrittelyjä ei ole välttämätöntä tehdä.
+	</li>
+	<li> Ohjelmaa testataan kattavammin kuin on vaadittu. Testit on dokumentoitu hyvin.
+	</li>
+	<li> Oma lisäominaisuus. Ohjelmaan on toteutettu jokin itse keksitty tämän listan ulkopuolinen lisäominaisuus. Omat lisäominaisuudet on hyväksytettävä etukäteen kurssihenkilökunnalla, jotta niistä voisi saada pisteitä.
+	</li>
+</ul>
+
+<p id="tiraka"> (1) Nämä lisäosat yhdessä (hakemistojen rekursiivinen käsittely ja symboliset linkit) voidaan lukea myös Tietorakenteiden ja algoritmien kurssin harjoitustyöksi, jos ne täyttävät tietyt lisäkriteerit. <!--Hakemistoilta on voitava kysyä niiden koko sisältöineen siten, että myös symbolisten linkkien osoittamat alkiot lasketaan mukaan, mutta mitään alkiota ei lasketa useaan kertaan. Koko voidaan esittää muiden alkion tietojen kanssa (jos kyseinen lisäosa on myös toteutettu) tai vaikkapa erillisellä painikkeella ja tekstikentällä pääikkunassa.--> Katso yksityiskohdat <a href="http://www.cs.tut.fi/~tiraka/harjoitustyot/">täältä</a>. <!-- linkki tarkistettava -->
+</p>
+
+<p id="rinn"> (2) Nämä lisäosat yhdessä (asynkroninen kopiointi ja edistymispalkki) voidaan lukea myös Rinnakkaisuuden kurssin harjoitustyöksi, jos ne täyttävät tietyt lisäkriteerit. Katso yksityiskohdat <a href="http://www.cs.tut.fi/~rinn/Harjoitusty%C3%B6t.html">täältä</a>. <!-- linkki tarkistettava -->
+</p>
+
+
+<h2> Toteutus </h2>
+
+<p> Työympäristö haetaan kurssisvn:stä. Valmiit toteutuksen osat tulevat sinne saataville.
+</p>
+
+<h3> Ympäristö </h3>
+
+<p> Työtä varten toteutettu valmis ohjelmarunko on saatavilla kurssisvn:stä ryhmän omasta tietovarastosta. Heti rungon hakemisen jälkeen kannattaa myös asettaa seuraava svn-ignore, joka pitää huolen siitä, että QtCreatorin käyttäjäkohtaiset asetukset eivät vahingossa talletu versiohallintaan:
+</p>
+
+<pre>
+ cd <i>{projektin trunk-hakemisto}</i>
+ svn propset svn:ignore '*.pro.user' -R .
+</pre>
+
+<p> Näiden toimien tuloksena pitäisi alla oleva hakemistorakenne.
+</p>
+
+<!-- tiedostolista tarkistettava -->
+
+<pre>
+ryhmän trunk
+|
+├── SSH-Client.pro
+│
+├── julkinen
+│   └── harjoitustyo
+│       └── Staff
+│           ├── ConnectionInterface.h
+│           ├── CopyerInterface.h
+│           ├── DirectoryEntryInterface.h
+│           ├── DirectoryInterface.h
+│           ├── FileInterface.h
+│           ├── Initialization.h
+│           ├── Staff.pro
+│           ├── ...
+├── Student
+│   ├── Copyer.cpp
+│   ├── Copyer.h
+│   ├── Initialization.cpp
+│   └── Student.pro
+└── Test
+    ├── CopyerTest.cpp
+    └── Test.pro
+</pre>
+
+<ul>
+	<li> <code>SSH-Client.pro</code> on projektitiedosto, josta koko projektin saa avattua QtCreatoriin.
+	</li>
+	<li> <code>julkinen</code>-hakemiston alla ovat valmiit toteutuksen osat. Tämän hakemiston sisältöä ei saa muokata.
+	</li>
+	<li> <code>Student</code>-hakemiston alle sijoitetaan kaikki omat toteutuksen osat. Joillekin näistä annetaan pieni toteutusrunko, jotta projekti menee heti kääntäjästä läpi.
+	</li>
+	<li> <code>Test</code>-hakemiston alle kirjoitetaan <code>Copyer</code>-luokalle vaaditut yksikkötestit.
+	</li>
+</ul>
+
+<h3> Luokkakaavio </h3>
+
+<p> Alla olevassa kuvassa on esitetty ohjelman oleellisimmat luokat. Lainausmerkeissä olevien luokkien oikeilla nimillä ei ole työn kannalta merkitystä.
+</p>
+
+<p><b>HUOM! Opiskelijoiden toteuttamien luokkien osalta kaavio on <em>täysin</em> kuvitteellinen, luokkia voi olla enemmän (ja todennäköisesti onkin), ja niiden väliset suhteet voivat olla aivan erilaiset.</b>
+</p>
+
+<img src="TIE-02400_files/luokkakaavio.png" width="800">
+
+<h3> Valmiina annetut luokat ja rajapinnat </h3>
+
+<p> Ohjelmaan on toteutettu valmiiksi mm. alla olevat osat.
+</p>
+
+<ul>
+	<li> Valmis toteutus huolehtii etäyhteyden muodostamisesta ja pyytää sitten itse toteutettavaa koodia rakentamaan ohjelman päänäkymän kutsumalla <code>Initialization</code>-tiedostoissa määriteltyä <code>startMain()</code>-funktiota.
+	</li>
+	<li> <code>startMain()</code>-funktiolle välitetään parametrina lista
+	<code>ConnectionInterface</code>n toteuttavia olioita, joista jokainen
+	edustaa yhtä luotua etäyhteyttä. Näiden kautta pääsee käsiksi etäyhteyden
+	päässä oleviin hakemistoihin ja tiedostoihin.
+	</li>
+	<li> <code>DirectoryEntryInterface</code>-, <code>FileInterface</code>- ja <code>DirectoryInterface</code>-rajapintaluokat määrittelevät rajapinnat hakemistoalkioita (tiedostoja ja hakemistoja) kuvaaville olioille. Ohjelmaan voidaan toteuttaa tuki myös muille erikoisalkioille (esim. symboliset linkit), joten periytymishierarkian ei voi olettaa olevan täydellinen.
+	</li>
+	<li> Ylläoleville rajapinnoille on tehty valmiina toteutukset etäyhteyden läpi käsiteltäville alkioille. Samoin on tehty testauksessa hyödylliset virtuaaliset alkiototeutukset, jotka eivät kytkeydy mihinkään tiedostojärjestelmään.
+	</li>
+	<li> <code>CopyerInterface</code> määrittelee rajapinnan kopiointioperaatiot suorittavalle luokalle. Rajapintaluokkaa ei käytetä ohjelman sisältä, mutta se kiinnittää kopioijan rajapinnan testausta varten.
+	</li>
+</ul>
+
+<p> Itse ohjelmaan on toteutettava ainakin seuraavat osat:
+</p>
+
+<ul>
+	<li> <code>startMain</code>-funktio, jota kutsutaan, kun etäyhteys on muodostettu. Siellä pitäisi saattaa ohjelma valmiiksi käyttöä varten ja muun muassa luoda ohjelman päänämymä.
+	</li>
+	<li> Päänäkymä toteutetaan omassa luokassaan. Sieltä on jotenkin päästävä käsiksi paikallisiin hakemistoalkioihin ja kopiointioperaatioihin, mutta kytköksen ei tarvitse olla luokkakaavion tapaan suora. Pääikkunan pohjan voi luoda tekemällä <code>Student</code>-aliprojektille uuden tiedoston tyyppiä <code>Qt</code>-><code>Qt Designer Form Class</code> ja valitsemalla templateksi <code>Main Window</code>.
+	</li>
+	<li> Perusalkioiden rajapinnat on toteutettava paikallisesti käsiteltäville alkioille.
+	</li>
+	<li> <code>Copyer</code>, joka suorittaa alkioden kopiointioperaatiot. Tälle luokalle on myös kirjoitettava yksikkötestit (aliprojektin <code>Test</code> luokkaan <code>CopyerTest</code>), minkä vuoksi sen rajapinta on kiinnitetty etukäteen periyttämällä se <code>CopyerInterface</code>-luokasta.
+	</li>
+</ul>
+
+<p> Luonnollisesti toteutukseen voi olla syytä sisällyttää muitakin luokkia.
+</p>
+
+<h3> Annettujen luokkien ja rajapintojen dokumentaatio </h3>
+
+<p> Valmiina annettujen luokkien ja rajapintojen Doxygen-dokumentaatio löytyy
+<a href="http://www.cs.tut.fi/~otekn/harjoitustyo/Rajapintadokumentaatio/html/index.html">kurssin kotisivuilta</a>.
+</p>
+
+<h3> Testaus </h3>
+
+<p> Harjoitustyön hyväksymiseksi vaaditaan, että <code>Copyer</code>-luokalle on kirjoitettu kattavat yksikkötestit. Laaditut testit palautetaan arvosteltavaksi varsinaisen ohjelmakoodin mukana. Luonnollisesti ohjelman muutkin osat ja ohjelma kokonaisuutena on syytä testata niiden toimivuuden varmistamiseksi, mutta niiden testausta ei erikseen arvostella. Vaadittua laajempi testaus on kuitenkin mahdollista lukea lisäominaisuudeksi ja siten korottaa arvosanaa.
+</p>
+
+<p> Palautettavia testejä on tarkoitus voida ajaa myös muiden tekemiä toteutuksia vastaan. Testit olisi siis mahdollisuuksien mukaan hyvä suunnitella hyväksymään mikä tahansa <code>CopyerInterface</code>-rajapinnan määrittelyn mukaan oikeellinen toiminnallisuus, ei vain oman toteutuksen mukaista toiminnallisuutta. Kaikkea mahdollista ei kuitenkaan tarvitse yrittää ottaa huomioon, eikä luokan toimivuutta ole tarpeen testata muiden kuin pakollisten ominaisuuksien osalta. Esimerkiksi testattaessa hakemiston antamista addSource-metodille voitaisiin lopputuloksena hyväksyä sekä poikkeus että onnistunut suoritus, mutta onnistuneenkaan suorituksen jälkeen ei ole tarpeen kokeilla kopioinnin käynnistämistä.
+</p>
+
+<p> <code>Copyer</code>in testausta ei ole tarkoitus tehdä oikeilla paikallisilla tai etähakemistoalkioilla. Niiden sijaan käytetään kurssin puolesta tarjottuja virtuaalisia hakemistoalkioita. Tällä tavoin testeissä ei tarvitse yrittää etsiä tai luoda sopivia oikeita tiedostoja, eivätkä ne pääse sekoittamaan oikeaa tiedostojärjestelmää.
+</p>
+
+<p> Vaaditut  <code>Copyer</code>-luokan yksikkötestit kirjoitetaan osaksi työympäristöstä löytyvää <code>Test</code>-projektia luokkaan <code>CopyerTest</code>. Mahdollisia muita automoituja testejä varten on luotava omat aliprojektinsa. Näihin on tuotava mukaan tarvittavat tiedostot muista aliprojekteista; katso mallia <code>Test.pro</code>-tiedostosta.
+</p>
+
+<h3> Vinkkejä </h3>
+
+<ul>
+	<li> Qt:n käyttöliittymän listat (esim. <code>QListWidget</code>) tukevat suoraan useiden alkioiden valitsemista, kunhan valintamoodin asettaa sopivaksi.
+	</li>
+	<li> Tiedostojen käsittelyä toteutettaessa kannattaa katsoa, mitä palveluita Qt:n omat tiedostorajapinnat tarjoavat, ennen kuin lähtee tekemään asioita suoraan POSIX-rajapintojen kautta. QDir-oliota käytettäessä on syytä huomata, että muutokset tiedostojärjestelmässä päivittyvät näkyviin vasta kun sille ajaa <code>refresh</code>-kutsun.
+	</li>
+</ul>
+
+
+</div><!--frame-->
+        
+<script src="TIE-02400_files/respond.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/kurssi/kurssikamat/!svn/ver/831/branches/julkinen/harjoitustyo/Staff
+END
+sftpfileentry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/806/branches/julkinen/harjoitustyo/Staff/sftpfileentry.cpp
+END
+DoxygenInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/DoxygenInfo.h
+END
+sftpdirectory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/797/branches/julkinen/harjoitustyo/Staff/sftpdirectory.cpp
+END
+sftpconnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/sftpconnection.h
+END
+DateTime.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/DateTime.h
+END
+sftpunknown.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/sftpunknown.h
+END
+connectingdialog.ui
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/connectingdialog.ui
+END
+loginwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/loginwindow.h
+END
+virtualconnection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/virtualconnection.cpp
+END
+connectingdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/kurssi/kurssikamat/!svn/ver/766/branches/julkinen/harjoitustyo/Staff/connectingdialog.cpp
+END
+VirtualDirectory.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/VirtualDirectory.h
+END
+sftpfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/sftpfile.h
+END
+passworddialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/passworddialog.cpp
+END
+sshconnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/kurssi/kurssikamat/!svn/ver/766/branches/julkinen/harjoitustyo/Staff/sshconnection.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/kurssi/kurssikamat/!svn/ver/766/branches/julkinen/harjoitustyo/Staff/main.cpp
+END
+ConnectionInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/kurssi/kurssikamat/!svn/ver/792/branches/julkinen/harjoitustyo/Staff/ConnectionInterface.h
+END
+loginform.ui
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/806/branches/julkinen/harjoitustyo/Staff/loginform.ui
+END
+CopyerInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/731/branches/julkinen/harjoitustyo/Staff/CopyerInterface.h
+END
+sftpconnection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/kurssi/kurssikamat/!svn/ver/827/branches/julkinen/harjoitustyo/Staff/sftpconnection.cpp
+END
+Initialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/Initialization.h
+END
+sftplink.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/sftplink.h
+END
+loginwindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/loginwindow.cpp
+END
+loginform.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/loginform.h
+END
+sftpfileentry.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/sftpfileentry.h
+END
+FileInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/kurssi/kurssikamat/!svn/ver/731/branches/julkinen/harjoitustyo/Staff/FileInterface.h
+END
+sftpdirectory.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/sftpdirectory.h
+END
+virtualconnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/kurssi/kurssikamat/!svn/ver/731/branches/julkinen/harjoitustyo/Staff/virtualconnection.h
+END
+sftpfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/766/branches/julkinen/harjoitustyo/Staff/sftpfile.cpp
+END
+DirectoryEntryInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/kurssi/kurssikamat/!svn/ver/804/branches/julkinen/harjoitustyo/Staff/DirectoryEntryInterface.h
+END
+connectingdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/connectingdialog.h
+END
+passworddialog.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/passworddialog.ui
+END
+sshconnection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/kurssi/kurssikamat/!svn/ver/810/branches/julkinen/harjoitustyo/Staff/sshconnection.cpp
+END
+Staff.pro
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/kurssi/kurssikamat/!svn/ver/766/branches/julkinen/harjoitustyo/Staff/Staff.pro
+END
+SymbolicLinkInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/SymbolicLinkInterface.h
+END
+passworddialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/kurssi/kurssikamat/!svn/ver/685/branches/julkinen/harjoitustyo/Staff/passworddialog.h
+END
+DirectoryInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/DirectoryInterface.h
+END
+sftplink.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/kurssi/kurssikamat/!svn/ver/831/branches/julkinen/harjoitustyo/Staff/sftplink.cpp
+END
+loginwindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/kurssi/kurssikamat/!svn/ver/731/branches/julkinen/harjoitustyo/Staff/loginwindow.ui
+END
+VirtualFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/731/branches/julkinen/harjoitustyo/Staff/VirtualFile.h
+END
+loginform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/kurssi/kurssikamat/!svn/ver/759/branches/julkinen/harjoitustyo/Staff/loginform.cpp
+END

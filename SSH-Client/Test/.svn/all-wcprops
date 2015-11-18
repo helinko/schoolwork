@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ryhmat/r104/!svn/ver/33/trunk/Test
+END
+CopyerTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ryhmat/r104/!svn/ver/31/trunk/Test/CopyerTest.cpp
+END
+LocalFileTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ryhmat/r104/!svn/ver/32/trunk/Test/LocalFileTest.cpp
+END
+Test.pro
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ryhmat/r104/!svn/ver/33/trunk/Test/Test.pro
+END

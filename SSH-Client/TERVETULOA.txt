@@ -1,0 +1,38 @@
+Tervetuloa!
+
+Tämä on esimerkkitiedosto, jonka tarkoituksena on vain kannustaa Subversionin
+käytön harjoitteluun. Sillä voi leikkiä mielensä mukaan.
+
+Harjoitustyö on tarkoitus koodata juuri tähän trunk-hakemistoon, joka on
+perinteisesti tietovaraston "runko" eli "päähaara".
+
+Tämän trunk-hakemiston alla oleva julkinen-hakemisto on linkki kurssin yhteisen
+tietovaraston julkiseen materiaaliin. Sen sisältö päivittyy automaattisesti svn
+update -komennolla samoin kuin muukin tietovarasto.
+
+Tietovaraston juuressa trunk-hakemiston kanssa samalla tasolla oleva
+tags-hakemisto on paikka, johon varsinaiset palautukset kopioidaan
+alihakemistoiksi "svn cp" -komennolla. Tästä tulee tarkemmat ohjeet
+palautusohjeeseen.
+
+Tietovaraston juuressa oleva branches-hakemisto on paikka,
+johon voi väliaikaisesti kopioida trunk-hakemistosta tavaraa kokeiluja,
+korjauksia tms. varten, jos niiden ei halua sotkevan trunk-hakemiston käyttöä.
+Tällä kurssilla branches-hakemistoa ei todennäköisesti tarvitse.
+
+Viimeiseksi tietovaraston juuressa on myös arvostelu-hakemisto. Tähän
+hakemistoon kurssin henkilökunta ja/tai palautusautomaatti voi tallettaa
+opiskelijalle näkyvää tietoa työn arvostelusta.
+
+Tällä tiedostolla on myös lyhyt muutoshistoria, jota voi käyttää Subversionin
+ominaisuuksien testaamiseen. Historian voi tulostaa komennolla
+svn log TERVETULOA.txt ja erot aiempaan versioon näkee komennolla
+svn diff -rVERSIONUMERO TERVETULOA.txt
+
+"This message will self-destruct in 10 seconds..." Tämän tiedoston ohjeet
+löytyvät myös julkinen-hakemiston alta, joten tämän tiedoston voi huoletta
+tuhota ensimmäisenä Subversion-harjoituksena. Tuhoaminen onnistuu esim.
+seuraavasti:
+
+svn rm TERVETULOA.txt    (merkitsee tiedoston poistettavaksi)
+svn commit               (viedään muutos tietovarastoon)

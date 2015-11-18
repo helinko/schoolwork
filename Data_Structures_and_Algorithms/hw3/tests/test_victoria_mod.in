@@ -1,0 +1,169 @@
+N Victoria
+241819 1819 1901
+N Victoria Mary Louisa
+171786 1786 1861
+M Prince Emich Karl of Leiningen
+1762 1762 1814
+A 1762 171786
+M Edward Augustus, Duke of Kent
+21767 1767 1820
+P 241819 171786 21767
+N Sophia Charlotte
+191744 1744 1818
+M George III
+41738 1738 1820
+P 21767 191744 41738
+N Augusta of Saxe-Gotha
+301719 1719 1772
+M Frederic Louis, Prince of Wales
+311701 1701 1751
+P 41738 301719 311701
+M George IV
+121762 1762 1830
+P 121762  191744 41738
+M William IV
+211765 1765 1837
+P 211765  191744 41738
+N Charlotte Augusta
+71796 1796 1817
+N Caroline Amelia Brunswick
+1768 1768 1821
+P 71796 1768 121762
+N Augusta
+121737 1737 1813
+M Charles of Brunswick-WolfenButtel
+0 1 1
+P 1768 121737 0
+P 121737 301719 311701
+M Leopold I George of Saxe-Coburg, King of Belgium
+161790 1790 1865
+N Augusta Reuss-Ebersdorf
+1757 1757 1831
+M Francis Frederic of Saxe-Coburg
+1750 1750 1806
+P 161790 1757 1750
+A  161790 71796
+M George II
+301683 1683 1760
+N Caroline of Ansbach
+1683 1683 1737
+P 311701 1683 301683
+N Louisa
+181724 1724 1751
+P 181724  1683 301683
+M Frederick V, King of Denmark
+311723 1723 1766
+M Cristian VII, King of Denmark
+291749 1749 1808
+P 291749 181724 311723
+N Caroline Matilda
+221751 1751 1775
+P 221751  301719 311701
+M Frederic VI, King of Denmark
+281768 1768 1839
+P 281768 221751 291749
+M Albert Augustus Charles
+261819 1819 1861
+N Louise of Saxe-Coburg-Altenburg
+1800 1800 1831
+M Ernest I, Duke of Saxe-Coburg-Saalfeld
+1784 1784 1844
+P 261819 1800 1784
+P 1784 1757 1750
+P 171786 1757 1750
+P 161790 1757 1750
+M Edward VII Wettin
+91841 1841 1910
+P 91841 241819 261819
+N Alexandra of Denmark
+11844 1844 1925
+M George V Windsor
+31865 1865 1936
+P 31865 11844 91841
+N Marie
+281767 1767 1852
+A 281768 281767
+N Juliana Maria
+41729 1729 1796
+M Frederick
+1753 1753 1805
+P 1753 41729 311723
+N Sophia Frederica of Mecklenburg
+1758 1758 1794
+M Christian VIII, King of Denmark
+181786 1786 1848
+P 181786 1758 1753
+N Charlotte
+41784 1784 1840
+M Frederick VII, King of Denmark
+61808 1808 1863
+P 61808 41784 181786
+N Louise Charlotte of Denmark
+1789 1789 1864
+P 1789 1758 1753
+M William of Hesse-Cassel
+1787 1787 1867
+N Louise of Hesse-Cassel
+71817 1817 1898
+P 71817 1789 1787
+M Christian IX, King of Denmark
+81818 1818 1906
+M Frederick VIII, King of Denmark
+31843 1843 1912
+P 31843 71817  81818
+P 11844 71817  81818
+N Victoria Adelaine Mary
+211840 1840 1901
+P 211840 241819 261819
+M Frederick III, German Emperor
+181813 1813 1888
+M William II, German Emperor
+271859 1859 1941
+P 271859 211840 181813 
+N Alice Maud Mary
+251843 1843 1878
+P 251843  241819 261819
+M Louis IV of Hesse, Grand Duke
+1837 1837 1892
+N Alexandra Fedorovna
+61872 1872 1918
+P 61872 251843 1837
+M Nicholas II Alexandrovich Romanov, Tsar of Russia
+181868 1868 1918
+A 181868 61872
+M Alexander III Alexandrovich Romanov, Tsar of Russia
+1845 1845 1894
+N Dagmar of Denmark
+1847 1847 1928
+P 181868 1847 1845 
+P 1847 71817 81818
+N Mary of Teck
+261867 1867 1953
+M Edward VIII Windsor
+231894 1894 1972
+M George VI Windsor
+141895 1895 1952
+P 231894 261867 31865
+P 141895  261867 31865
+N Maude Charlotte Mary
+261869 1869 1938
+P 261869 261867 31865
+M Charles Haakon II, King of Norway
+1872 1872 1957
+M Olav V, King of Norway
+21903 1903 1991
+P 21903 261869 1872
+N Louise of Sweden
+311851 1851 1926
+P 1872 311851 31843
+
+K 21903 311851
+
+T 311851
+
+T 31843
+T 1872
+T 1847
+T 31865
+
+Q

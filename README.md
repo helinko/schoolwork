@@ -8,7 +8,7 @@ Wherever there’s a folder named ‘julkinen’, it contains the parts of the p
 This was a voluntary essay on the course Mathematical Logic. SAT solvers are algorithms that solve the Boolean satisfiability problem, which is NP-complete. I got full points on the essay (6/6).
 
 #### SSH-client:
-This is perhaps my largest project yet. It was done in pairs, but due to things beyond my control, I ended up doing most of the work. Normally, without extra features, maximum points would have been 4 out of 5, but the course staff took into account my disproportionate amount of work and gave me full points (5/5). The parts I did can be found in the documentation.
+This is perhaps my largest project yet. It was done in pairs, but due to things beyond my control, I ended up doing most of the work. Normally, without extra features, maximum points would have been 4 out of 5, but the course staff took into account my disproportionate amount of work and gave me full points (5/5). The division of the work between us can be found in the documentation.
 
 #### Concurrency:
 The course in concurrency included a relatively small assingment, in which we implemented a simple concurrent server in pairs. This time the workload was divided much more evenly, and we both worked on most parts, so it can’t really be said which ones are mine.

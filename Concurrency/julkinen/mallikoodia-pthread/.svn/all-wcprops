@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread
+END
+testaa_satunnaislukuja.hh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/testaa_satunnaislukuja.hh
+END
+tulostus.hh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/tulostus.hh
+END
+satunnaisluku.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/satunnaisluku.hh
+END
+testaa_satunnaislukuja.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/testaa_satunnaislukuja.cc
+END
+tulostus.cc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/tulostus.cc
+END
+main.cc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/main.cc
+END
+LUEMUT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/LUEMUT.txt
+END
+satunnaisluku.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/satunnaisluku.cc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/kurssi/kurssikamat/!svn/ver/2/tags/julkinen/mallikoodia-pthread/Makefile
+END

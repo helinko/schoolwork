@@ -1,0 +1,25 @@
+			   TIE-02500 Rinnakkaisuus
+			    mallikoodia kevät 2015
+=============================================================================
+
+Esimerkkiohjelma kääntyy Lintulan Linux -ympäristössä (esim. rinn.cs.tut.fi)
+komennolla: make
+
+Koodin on tarkoitus antaa esimerkkejä harjoitustyössä mahdollisesti
+tarvittavista osasista:
+- miten useampaan tiedostoon jaettu C++-koodi käännetään yhdeksi 
+  ajettavaksi binääriksi make:n avulla
+- miten suojataan rinnakkaista tulostusta cerr:iin siten, että
+  saadaan yhden "tulostuskerran" osaset tulostettua peräkkäin
+  (tulostus.cc ja sen käyttö main.cc:ssä)
+- miten suojataan yhteistä resurssia, jota luokan kaikki instanssit
+  käyttävät (satunnaisuutta.cc)
+- miten käynnistetään ja odotetaan phtread-säikeitä C++-koodissa
+  (main.cc)
+
+
+Kaikkia kurssin mallikoodeja koskee lisenssi
+http://creativecommons.org/licenses/nc-sa/1.0/
+eli niitä saa vapaasti käyttää ja muokata omassa mallikoodissaan
+(ilman että alkuperäistä lähdettä/tekijää tarvitsee mainita)
+

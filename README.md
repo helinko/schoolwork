@@ -1,5 +1,5 @@
 # Schoolwork
-My programming assignments from school courses
+This repository contains my programming assignments from school courses.
 
 ### General notes:
 Wherever there’s a folder named ‘julkinen’, it contains the parts of the program given by the course staff. The folders include also the given assignment. The comments and documentation of the SSH-client and concurrency assignment are in Finnish, the rest are in English. The programming language in all of them is C++.
